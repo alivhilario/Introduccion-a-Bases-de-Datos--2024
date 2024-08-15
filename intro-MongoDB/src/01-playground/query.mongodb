@@ -1,0 +1,4 @@
+use("sample_training");
+//Consult , counting
+db.zips.find({ state: "NY" }).count();
+
