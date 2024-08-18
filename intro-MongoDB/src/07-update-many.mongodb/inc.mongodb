@@ -1,0 +1,12 @@
+use("platzi_store");
+//UPDATE
+db.products.updateOne(
+  //query
+  { _id: 3 },
+  //Change => operator
+  {
+    $inc: {
+      price: 3000,
+    }
+  }
+);
